@@ -8,7 +8,9 @@
 </head>
 <body>
     <div class="container">
-        <header>ciao</header>
+        <header>
+            @include('partials/header')
+        </header>
         <main>ciao</main>
         <footer>ciao</footer>
     </div>
