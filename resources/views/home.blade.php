@@ -9,10 +9,14 @@
 <body>
     <div class="container">
         <header>
-            @include('partials/header')
+            @include('layout.header')
         </header>
-        <main>ciao</main>
-        <footer>ciao</footer>
+        <main>
+            @include('layout.main')
+        </main>
+        <footer>
+            @include('layout.main')
+        </footer>
     </div>
 </body>
 </html>
