@@ -8,13 +8,13 @@
     <title>Document</title>
 </head>
 <body>
-    <nav>
+    <header>
         @include('partials.header')
-    </nav>
-    <main class="bg-dark m-0 p-0 text-light">
-        <img src="{{ asset('images/footer-bg.jpg')}}" alt="Logo" width="1900" height="800" class="d-inline-block align-text-top">
-    </main>    
-    <footer class="vh-15">
+    </header>
+    <main class="bg-dark">
+        
+    </main>
+    <footer>
         @include('partials.footer')
     </footer>
 </body>
