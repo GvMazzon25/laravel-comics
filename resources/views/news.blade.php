@@ -11,9 +11,8 @@
     <nav>
         @include('partials.header')
     </nav>
-    <main class="bg-dark text-light text-center vh-50">
-        <h1 class="m-3">DC COMICS</h1>
-        <img src="{{ asset('images/dc-logo.png')}}" alt="Logo" width="500" height="500" class="m-5 d-inline-block align-text-top">
+    <main class="bg-dark m-0 p-0 text-light">
+        <img src="{{ asset('images/footer-bg.jpg')}}" alt="Logo" width="2000" height="800" class="d-inline-block align-text-top">
     </main>    
     <footer class="vh-15">
         @include('partials.footer')
