@@ -14,102 +14,17 @@
   <main class="bg-dark text-center vh-50">
     <section class="bg-dark">
       <section class="d-flex flex-row justify-content-around flex-wrap ">
+        @foreach ($comics as $comic)
           <div class="card m-3" style="width: 18rem;">
             <a href="{{ route('card') }}">
-              <img src="..." class="card-img-top" alt="...">
+              <img src="{{ $comic['thumb'] }}" class="card-img-top" alt="{{ $comic['title'] }}">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">{{ $comic['title'] }}</p>
               </div>
             </a>
           </div>
-          <div class="card m-3" style="width: 18rem;">
-            <a href="{{ route('card') }}">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </a>
-          </div>
-          <div class="card m-3" style="width: 18rem;">
-            <a href="{{ route('card') }}">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </a>
-          </div>
-          <div class="card m-3" style="width: 18rem;">
-            <a href="{{ route('card') }}">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </a>
-          </div>
-          <div class="card m-3" style="width: 18rem;">
-            <a href="{{ route('card') }}">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </a>
-          </div>
-          <div class="card m-3" style="width: 18rem;">
-            <a href="{{ route('card') }}">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </a>
-          </div>
-          <div class="card m-3" style="width: 18rem;">
-            <a href="{{ route('card') }}">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </a>
-          </div>
-          <div class="card m-3" style="width: 18rem;">
-            <a href="{{ route('card') }}">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </a>
-          </div>
-          <div class="card m-3" style="width: 18rem;">
-            <a href="{{ route('card') }}">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </a>
-          </div>
-          <div class="card m-3" style="width: 18rem;">
-            <a href="{{ route('card') }}">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </a>
-          </div>
-          <div class="card m-3" style="width: 18rem;">
-            <a href="{{ route('card') }}">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </a>
-          </div>
-          <div class="card m-3" style="width: 18rem;">
-            <a href="{{ route('card') }}">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </a>
-          </div>
+        @endforeach  
+          
       </section>
     </section>
   </main>    
