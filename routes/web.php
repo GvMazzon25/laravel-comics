@@ -241,6 +241,7 @@ Route::get('/comics', function () {
     ]);
 })->name('comics');
 
+
 Route::get('/card', function () {
     return view('card');
 })->name('card');
